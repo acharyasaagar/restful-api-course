@@ -1,0 +1,13 @@
+{
+  "name": "Restaurant Helsinki",
+  "email": "restauranthelsinki@gmail.com",
+  "phone": "04593234326",
+  "password": "helsinki234",
+  "address": {
+    "street": "Mannerheimientie 5 B",
+    "city": "Helslinki",
+    "postalCode": "00110",
+    "country": "Finland"
+  },
+  "supervisorName": "John Doe"
+}

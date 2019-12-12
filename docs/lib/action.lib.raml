@@ -1,0 +1,22 @@
+#%RAML 1.0 Library
+
+types: 
+  RoleType:
+    type: string
+    enum: ['user', 'workplace']
+
+  ForgotPasswordType:
+    properties: 
+      email: string
+      role: RoleType
+
+  ResetPasswordType:
+    properties: 
+      digest: string
+      password: string
+      role: RoleType
+      
+  VerifyEmailType:
+    properties: 
+      email: string
+      role: RoleType

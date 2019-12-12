@@ -1,0 +1,35 @@
+#%RAML 1.0 ResourceType
+
+description: Interface to interact with <<resourcePathName | !singularize>> resource in application
+get?:
+  description: Returns a collection of <<resourcePathName>>
+  responses:
+    200:
+      body:
+        application/json:
+          example: |
+            <<getCollectionExample>>
+      400:
+        body:
+          application/json:
+            example: !include ../examples/400.res.json
+post:
+  description: Creates a new <<resourcePathName|!singularize>> resource in the database
+  body:
+    application/json:
+      type: |
+        <<postReqBodyType>>
+      example: |
+        <<postReqExample>>
+  responses:
+    200:
+      body:
+        type: object
+        application/json:
+          example: |
+            <<postResExample>>
+    400:
+      body:
+        type: object
+        application/json:
+          example: !include ../examples/400.res.json

@@ -1,0 +1,72 @@
+{
+  "shiftRowId": "12-30-25-2019",
+  "shifts": [
+    {
+      "shiftId": "12-30-09092019",
+      "startTime": "09:00",
+      "finishTime": "14:00",
+      "date": "09-09-2019",
+      "role": "Cashier",
+      "shiftHours": 5,
+      "shiftType": "s"
+    },
+    {
+      "shiftId": "12-30-10092019",
+      "startTime": "09:00",
+      "finishTime": "14:00",
+      "date": "10-09-2019",
+      "role": "Cashier",
+      "shiftHours": 5,
+      "shiftType": "s"
+    },
+    {
+      "shiftId": "12-30-11092019",
+      "startTime": "09:00",
+      "finishTime": "14:00",
+      "date": "11-09-2019",
+      "role": "Cashier",
+      "shiftType": "s",
+      "shiftHours": 0
+    },
+    {
+      "shiftId": "12-30-12092019",
+      "startTime": "09:00",
+      "finishTime": "14:00",
+      "date": "12-09-2019",
+      "role": "Cashier",
+      "shiftType": "s",
+      "shiftHours": 5
+    },
+    {
+      "shiftId": "12-30-13092019",
+      "startTime": "00:00",
+      "finishTime": "00:00",
+      "date": "13-09-2019",
+      "role": "None",
+      "shiftType": "v",
+      "shiftHours": 0
+    },
+    {
+      "shiftId": "12-30-14092019",
+      "startTime": "00:00",
+      "finishTime": "00:00",
+      "date": "14-09-2019",
+      "role": "None",
+      "shiftType": "x",
+      "shiftHours": 0
+    },
+    {
+      "shiftId": "12-30-15092019",
+      "startTime": "00:00",
+      "finishTime": "00:00",
+      "date": "15-09-2019",
+      "role": "None",
+      "shiftType": "x",
+      "shiftHours": 0
+    }
+  ],
+  "totalHours": 20,
+  "user": 30,
+  "weekNo": 25,
+  "year": 2019
+}

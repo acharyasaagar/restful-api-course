@@ -1,0 +1,24 @@
+{
+  "data": {
+    "email": "jdoe@mail.com",
+    "id": 11,
+    "name": "John Doe",
+    "roles": [
+      {
+        "id": 1,
+        "roleName": "Cashier"
+      },
+      {
+        "id": 2,
+        "roleName": "Waiter"
+      },
+      {
+        "id": 3,
+        "roleName": "Manager"
+      }
+    ]
+  },
+  "statusCode": 200,
+  "message": "Added",
+  "description": "Employee successfully added to the workplace"
+}

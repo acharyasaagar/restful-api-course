@@ -1,0 +1,10 @@
+{
+  "statusCode": 200,
+  "message": "Registered",
+  "description": "User successfully registered to the application.",
+  "data": {
+    "id": 1,
+    "email": ["John", "Doe"],
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Impkb2UxMUBnbWFpbC5jb20iLCJpZCI6NCwiaWF0IjoxNTU3MzA3NjEyLCJleHAiOjE1NTk4OTk2MTJ9.2TcwnI4BB32mhhCVW-Yj5C4Zrf38icTO2amyWUW9jAs"
+  }
+}

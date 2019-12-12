@@ -1,0 +1,12 @@
+{
+  "name": ["John", "Doe"],
+  "email": "jdoe@gmail.com",
+  "phone": "043456789",
+  "password": "strongpassword",
+  "address": {
+    "street": "Main street 22",
+    "city": "Helsinki",
+    "postalCode": "00170",
+    "country": "Finland"
+  }
+}

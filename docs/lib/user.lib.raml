@@ -1,0 +1,55 @@
+#%RAML 1.0 Library
+
+uses: 
+  RoleLib: ../lib/role.lib.raml
+  ContractLib: ../lib/contract.lib.raml
+
+types: 
+  UserType:
+    properties: 
+      name: string[]
+      email: string
+      phone: string
+      password: string
+      address: 
+        type: object
+        properties: 
+          street: string
+          postalCode: string
+          city: string
+          country: string
+  EditUserType:
+    properties: 
+      name?: string[]
+      email?: string
+      phone?: string
+      password?: string
+      address?: 
+        type: object
+        properties: 
+          street: string
+          postalCode: string
+          city: string
+          country: string
+  NewEmployeeType:
+    properties: 
+      employmentStartDate?: string
+      employmentEndDate?: string
+      maxAllowedWorkingHours?: number
+      userEmail: string
+      roles: RoleLib.RoleType
+  EditEmployeeType:
+    properties: 
+      employmentStartDate?: string
+      employmentEndDate?: string
+      maxAllowedWorkingHours?: number
+      roles: RoleLib.RoleType
+  UpdatePasswordType:
+    properties: 
+      oldPassword: string
+      newPassword: string
+  UpdateEmailType:
+    properties: 
+      oldEmail: string
+      newEmail: string
+      

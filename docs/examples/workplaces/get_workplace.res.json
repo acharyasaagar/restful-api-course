@@ -1,0 +1,18 @@
+{
+  "statusCode": 200,
+  "message": "Workplace retrieved",
+  "description": "Workplace successfully retrieved from the database",
+  "data": {
+    "id": 1,
+    "name": "Ravintola Helsinki",
+    "email": "ravintolahelsinki@mail.com",
+    "phone": "0453457831",
+    "address": {
+      "street": "Main Street 123 ",
+      "city": "Espoo",
+      "postalCode": "02170",
+      "country": "Finland"
+    },
+    "supervisorName": "Mary Lindholm"
+  }
+}

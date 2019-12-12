@@ -1,0 +1,91 @@
+{
+  "statusCode": 200,
+  "message": "Employees retrieved",
+  "description": "All the employees with the given query are retrieved from the database",
+  "data": [
+    {
+      "address": {
+        "street": "vieraskuja 5 b 22",
+        "city": "Espoo",
+        "postalCode": "02770",
+        "country": "Finland"
+      },
+      "id": 1,
+      "maxAllowedWorkingHours": 35,
+      "phone": "0449323786",
+      "name": [
+        "John",
+        "Doe"
+      ],
+      "email": "jdoe@mail.com",
+      "employmentEndDate": "2069-10-23",
+      "employmentStartDate": "2019-08-11",
+      "roles": [
+        {
+          "id": 1,
+          "roleName": "Cashier"
+        },
+        {
+          "id": 2,
+          "roleName": "Waiter"
+        }
+      ]
+    },
+    {
+      "address": {
+        "street": "vieraskuja 5 b 22",
+        "city": "Espoo",
+        "postalCode": "02770",
+        "country": "Finland"
+      },
+      "id": 2,
+      "maxAllowedWorkingHours": 35,
+      "phone": "0449323786",
+      "name": [
+        "David",
+        "Eaton"
+      ],
+      "email": "davide@mail.com",
+      "employmentEndDate": "2069-10-23",
+      "employmentStartDate": "2019-08-11",
+      "roles": [
+        {
+          "id": 1,
+          "roleName": "Manager"
+        },
+        {
+          "id": 2,
+          "roleName": "Supervisor"
+        }
+      ]
+    },
+    {
+      "address": {
+        "street": "vieraskuja 5 b 22",
+        "city": "Espoo",
+        "postalCode": "02770",
+        "country": "Finland"
+      },
+      "id": 3,
+      "maxAllowedWorkingHours": 35,
+      "phone": "0449323786",
+      "name": [
+        "Harry",
+        "Com"
+      ],
+      "email": "harry@mail.com",
+      "employmentEndDate": "2069-10-23",
+      "employmentStartDate": "2019-08-11",
+      "roles": [
+        {
+          "id": 1,
+          "roleName": "Clerk"
+        },
+        {
+          "id": 2,
+          "roleName": "Receptionist"
+        }
+      ]
+    }
+  ]
+}

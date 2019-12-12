@@ -1,0 +1,8 @@
+{
+  "statusCode": 200,
+  "message": "Shift row created",
+  "description": "Shift row successfully created and saved in the database",
+  "data": {
+    "shiftRowId": "12-30-25-2019"
+  }
+}

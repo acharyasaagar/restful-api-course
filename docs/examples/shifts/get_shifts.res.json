@@ -1,0 +1,103 @@
+{
+  "statusCode": 200,
+  "message": "Retrieved",
+  "description": "Shifts successfully retrieved",
+  "data": [
+    {
+      "shiftId": "12-30-09092019",
+      "startTime": "07:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "Cashier",
+      "shiftHours": 8
+    },
+    {
+      "shiftId": "12-30-10092019",
+      "startTime": "11:00",
+      "finishTime": "20:30",
+      "date": "09-09-2019",
+      "role": "Supervisor",
+      "shiftHours": 9.5
+    },
+    {
+      "shiftId": "12-30-11092019",
+      "startTime": "00:00",
+      "finishTime": "00:00",
+      "date": "09-09-2019",
+      "role": "None",
+      "shiftHours": 0
+    },
+    {
+      "shiftId": "12-30-13092019",
+      "startTime": "07:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "None",
+      "shiftHours": 8
+    },
+    {
+      "shiftId": "12-30-14092019",
+      "startTime": "09:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "Supervisor",
+      "shiftHours": 6
+    },
+    {
+      "shiftId": "12-30-15092019",
+      "startTime": "09:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "Supervisor",
+      "shiftHours": 6
+    },
+    {
+      "shiftId": "12-30-09092019",
+      "startTime": "07:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "Manager",
+      "shiftHours": 8
+    },
+    {
+      "shiftId": "12-30-10092019",
+      "startTime": "11:00",
+      "finishTime": "20:30",
+      "date": "09-09-2019",
+      "role": "Supervisor",
+      "shiftHours": 9.5
+    },
+    {
+      "shiftId": "12-30-11092019",
+      "startTime": "00:00",
+      "finishTime": "00:00",
+      "date": "09-09-2019",
+      "role": "None",
+      "shiftHours": 0
+    },
+    {
+      "shiftId": "12-30-13092019",
+      "startTime": "07:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "Supervisor",
+      "shiftHours": 8
+    },
+    {
+      "shiftId": "12-30-14092019",
+      "startTime": "09:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "Supervisor",
+      "shiftHours": 6
+    },
+    {
+      "shiftId": "12-30-15092019",
+      "startTime": "09:00",
+      "finishTime": "15:00",
+      "date": "09-09-2019",
+      "role": "Cashier",
+      "shiftHours": 6
+    }
+  ]
+}

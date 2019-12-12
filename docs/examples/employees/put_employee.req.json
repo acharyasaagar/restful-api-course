@@ -1,0 +1,14 @@
+{
+  "employmentEndDate": "01 Jan 2020",
+  "maxAllowedWorkingHours": 30,
+  "roles": [
+    {
+      "id": 22,
+      "roleName": "Accountant"
+    },
+    {
+      "id": 15,
+      "roleName": "Assistant Manager"
+    }
+  ]
+}

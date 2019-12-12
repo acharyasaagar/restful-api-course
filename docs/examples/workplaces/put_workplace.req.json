@@ -1,0 +1,13 @@
+{
+  "name": "Restaurant Helsinki",
+  "email": "helsinki.ravintola@gmail.com",
+  "phone": "0443634533",
+  "password": "str0ng3rp4ssw0rd",
+  "address": {
+    "street": "Mannerheimientie 5 B",
+    "city": "Helslinki",
+    "postalCode": "00110",
+    "country": "Finland"
+  },
+  "supervisorName": "Mary Smith"
+}

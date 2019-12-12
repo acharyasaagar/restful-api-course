@@ -1,0 +1,12 @@
+{
+  "name": ["Sagar", "Acarya"],
+  "email": "acharyasaagar@gmail.com",
+  "phone": "0449323786",
+  "password": "12345678",
+  "address": {
+    "street": "vieraskuja 5 b 22",
+    "city": "Espoo",
+    "postalCode": "02770",
+    "country": "Finland"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "statusCode": 200,
+  "message": "User retrieved",
+  "description": "User successfully retrieved from the database",
+  "data": {
+    "id": 1,
+    "name": ["John", "Doe"],
+    "email": "jdoe@mail.com",
+    "email_verified": true,
+    "phone": "0453457831",
+    "address": {
+      "street": "Main Street 123 ",
+      "city": "Espoo",
+      "postalCode": "02170",
+      "country": "Finland"
+    }
+  }
+}

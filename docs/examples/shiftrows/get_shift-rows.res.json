@@ -1,0 +1,327 @@
+{
+  "data": [
+    {
+      "employeeName": ["Deep", "Ocean"],
+      "maxAllowedWorkingHours": 32,
+      "roles": [
+        {
+          "id": 7,
+          "roleName": "Supervisor"
+        },
+        {
+          "id": 11,
+          "roleName": "Accountant"
+        }
+      ],
+      "shiftRowId": "7-6-49-2019",
+      "shifts": [
+        {
+          "shiftId": "7-6-20191207",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-07",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-6-20191208",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-08",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-6-20191202",
+          "startTime": "18:00",
+          "finishTime": "10:00",
+          "date": "2019-12-02",
+          "shiftHours": 16,
+          "role": "Designer",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-6-20191206",
+          "startTime": "15:20",
+          "finishTime": "18:45",
+          "date": "2019-12-06",
+          "shiftHours": 3.4,
+          "role": "Designer",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-6-20191203",
+          "startTime": "00:00",
+          "finishTime": "01:00",
+          "date": "2019-12-03",
+          "shiftHours": 1,
+          "role": "Designer",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-6-20191205",
+          "startTime": "07:30",
+          "finishTime": "14:00",
+          "date": "2019-12-05",
+          "shiftHours": 6.5,
+          "role": "Designer",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-6-20191204",
+          "startTime": "00:00",
+          "finishTime": "10:00",
+          "date": "2019-12-04",
+          "shiftHours": 10,
+          "role": "Designer",
+          "shiftType": "s"
+        }
+      ],
+      "totalHours": 36.9,
+      "user": 6
+    },
+    {
+      "employeeName": ["Kurane", "Nzonzi"],
+      "maxAllowedWorkingHours": 40,
+      "roles": [
+        {
+          "id": 7,
+          "roleName": "Supervisor"
+        },
+        {
+          "id": 8,
+          "roleName": "Manager"
+        }
+      ],
+      "shiftRowId": "7-8-49-2019",
+      "shifts": [
+        {
+          "shiftId": "7-8-20191208",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-08",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-8-20191202",
+          "startTime": "18:00",
+          "finishTime": "23:00",
+          "date": "2019-12-02",
+          "shiftHours": 5,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191204",
+          "startTime": "19:00",
+          "finishTime": "00:00",
+          "date": "2019-12-04",
+          "shiftHours": 5,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191205",
+          "startTime": "19:00",
+          "finishTime": "23:00",
+          "date": "2019-12-05",
+          "shiftHours": 4,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191206",
+          "startTime": "17:30",
+          "finishTime": "00:00",
+          "date": "2019-12-06",
+          "shiftHours": 6.5,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191203",
+          "startTime": "00:00",
+          "finishTime": "18:00",
+          "date": "2019-12-03",
+          "shiftHours": 18,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191207",
+          "startTime": "10:00",
+          "finishTime": "18:00",
+          "date": "2019-12-07",
+          "shiftHours": 8,
+          "role": "Supervisor",
+          "shiftType": "s"
+        }
+      ],
+      "totalHours": 46.5,
+      "user": 8
+    },
+    {
+      "employeeName": ["Raswar", "Tuplati"],
+      "maxAllowedWorkingHours": 40,
+      "roles": [
+        {
+          "id": 7,
+          "roleName": "Supervisor"
+        }
+      ],
+      "shiftRowId": "7-7-49-2019",
+      "shifts": [
+        {
+          "shiftId": "7-7-20191207",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-07",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-7-20191208",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-08",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-7-20191202",
+          "startTime": "18:00",
+          "finishTime": "00:00",
+          "date": "2019-12-02",
+          "shiftHours": 6,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-7-20191205",
+          "startTime": "17:35",
+          "finishTime": "00:00",
+          "date": "2019-12-05",
+          "shiftHours": 6.4,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-7-20191203",
+          "startTime": "00:00",
+          "finishTime": "19:00",
+          "date": "2019-12-03",
+          "shiftHours": 19,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-7-20191204",
+          "startTime": "20:00",
+          "finishTime": "19:00",
+          "date": "2019-12-04",
+          "shiftHours": 23,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-7-20191206",
+          "startTime": "10:00",
+          "finishTime": "09:00",
+          "date": "2019-12-06",
+          "shiftHours": 23,
+          "role": "Supervisor",
+          "shiftType": "s"
+        }
+      ],
+      "totalHours": 77.4,
+      "user": 7
+    },
+    {
+      "employeeName": ["Steve", "Smith"],
+      "maxAllowedWorkingHours": 40,
+      "roles": [
+        {
+          "id": 11,
+          "roleName": "Accountant"
+        }
+      ],
+      "shiftRowId": "7-10-49-2019",
+      "shifts": [
+        {
+          "shiftId": "7-10-20191202",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-02",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-10-20191204",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-04",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-10-20191205",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-05",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-10-20191203",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-03",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-10-20191206",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-06",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-10-20191207",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-07",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-10-20191208",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-08",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        }
+      ],
+      "totalHours": 0,
+      "user": 10
+    }
+  ],
+  "description": "Shiftrows successfully retrieved from the database",
+  "message": "Shiftrows retrieved",
+  "statusCode": 200
+}

@@ -1,0 +1,151 @@
+{
+  "statusCode": 200,
+  "message": "Retrieved",
+  "description": "Shift row successfully retrieved from the database",
+  "data": [
+    {
+      "shiftRowId": "7-8-49-2019",
+      "shifts": [
+        {
+          "shiftId": "7-8-20191208",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-08",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-8-20191202",
+          "startTime": "18:00",
+          "finishTime": "23:00",
+          "date": "2019-12-02",
+          "shiftHours": 5,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191204",
+          "startTime": "19:00",
+          "finishTime": "00:00",
+          "date": "2019-12-04",
+          "shiftHours": 5,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191205",
+          "startTime": "19:00",
+          "finishTime": "23:00",
+          "date": "2019-12-05",
+          "shiftHours": 4,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191206",
+          "startTime": "17:30",
+          "finishTime": "00:00",
+          "date": "2019-12-06",
+          "shiftHours": 6.5,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191203",
+          "startTime": "00:00",
+          "finishTime": "18:00",
+          "date": "2019-12-03",
+          "shiftHours": 18,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191207",
+          "startTime": "10:00",
+          "finishTime": "18:00",
+          "date": "2019-12-07",
+          "shiftHours": 8,
+          "role": "Supervisor",
+          "shiftType": "s"
+        }
+      ],
+      "totalHours": 46.5,
+      "user": 8,
+      "weekNo": 49,
+      "year": 2019
+    },
+    {
+      "shiftRowId": "7-8-50-2019",
+      "shifts": [
+        {
+          "shiftId": "7-8-20191209",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-09",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-8-20191210",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-10",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-8-20191214",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-14",
+          "shiftHours": 0,
+          "role": "None",
+          "shiftType": "x"
+        },
+        {
+          "shiftId": "7-8-20191211",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-11",
+          "shiftHours": 0,
+          "role": "Supervisor",
+          "shiftType": "vl"
+        },
+        {
+          "shiftId": "7-8-20191212",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-12",
+          "shiftHours": 0,
+          "role": "Supervisor",
+          "shiftType": "vl"
+        },
+        {
+          "shiftId": "7-8-20191215",
+          "startTime": "18:00",
+          "finishTime": "02:00",
+          "date": "2019-12-15",
+          "shiftHours": 8,
+          "role": "Supervisor",
+          "shiftType": "s"
+        },
+        {
+          "shiftId": "7-8-20191213",
+          "startTime": "00:00",
+          "finishTime": "00:00",
+          "date": "2019-12-13",
+          "shiftHours": 0,
+          "role": "Supervisor",
+          "shiftType": "vl"
+        }
+      ],
+      "totalHours": 8,
+      "user": 8,
+      "weekNo": 50,
+      "year": 2019
+    }
+  ]
+}

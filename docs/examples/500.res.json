@@ -1,0 +1,5 @@
+{
+  "statusCode": 500,
+  "message": "Internal Server Error",
+  "description": "The server was unable to process your request. Please refer to the documentation for the request format.",
+}

@@ -1,0 +1,27 @@
+{
+  "data": {
+    "address": {
+      "street": "Mannerheimintie 5 b 22",
+      "city": "Helsinki",
+      "postalCode": "00100",
+      "country": "Finland"
+    },
+    "email": "jdoe@gmail.com",
+    "employmentEndDate": "2069-08-17",
+    "employmentStartDate": "2019-08-11",
+    "id": 9,
+    "maxAllowedWorkingHours": 35,
+    "name": [
+      "John",
+      "Doe"
+    ],
+    "phone": "0449823721",
+    "roles": [{
+      "id": 1,
+      "roleName": "Supervisor"
+    }]
+  },
+  "description": "Employee successfully retrieved from the database",
+  "message": "Employee retrieved",
+  "statusCode": 200
+}

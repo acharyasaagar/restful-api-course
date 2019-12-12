@@ -1,0 +1,9 @@
+{
+  "data": {
+    "id": 1,
+    "name": "manager"
+  },
+  "statusCode": 200,
+  "message": "Created",
+  "description": "New role successfully created."
+}

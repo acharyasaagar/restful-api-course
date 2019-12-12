@@ -1,0 +1,17 @@
+{
+  "statusCode": 200,
+  "message": "Retrieved",
+  "description": "Workplaces associated with user retrieved",
+  "data": [
+    {
+      "id": 1,
+      "name": "Restaurant Helsinque",
+      "supervisorName": "Dunu Bagota"
+    },
+    {
+      "id": 2,
+      "name": "Fish and Meat",
+      "supervisorName": "Luis Enrique"
+    }
+  ]
+}

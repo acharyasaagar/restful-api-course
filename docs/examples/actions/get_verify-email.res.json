@@ -1,0 +1,6 @@
+{
+  "statusCode": 200,
+  "message": "Email Verified",
+  "description": "Successfully verified the user's email address.",
+  "data": {}
+}

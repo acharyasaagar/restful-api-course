@@ -1,0 +1,21 @@
+#%RAML 1.0 ResourceType
+
+description: Auth interface for <<resourceName>>
+
+post:
+  description: Authenticates a <<resourceName>> into the application
+  body:
+    application/json:
+      type: <<AuthType>>
+      example: !include ../examples/auth/post_auth.req.json
+  responses:
+    200:
+      body:
+        type: object
+        application/json:
+          example: !include ../examples/auth/post_auth.res.json
+    400:
+      body:
+        type: object
+        application/json:
+          example: !include ../examples/400.res.json

@@ -1,0 +1,23 @@
+{
+  "statusCode": 200,
+  "message": "Roles retrieved",
+  "description": "All the roles are retrieved from the database",
+  "data": [
+    {
+      "id": 1,
+      "name": "cashier"
+    },
+    {
+      "id": 2,
+      "name": "manager"
+    },
+    {
+      "id": 3,
+      "name": "chef"
+    },
+    {
+      "id": 4,
+      "name": "helper"
+    }
+  ]
+}

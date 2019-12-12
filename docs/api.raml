@@ -1,0 +1,377 @@
+#%RAML 1.0
+title: ShiftManager Application
+version: v1
+baseUri: https://api.rostergrid.com/v1
+mediaType: application/json
+documentation: 
+  - title: Introduction
+    content: |
+      This API is created to interact with the rostergrid workplace web application and rostergrid
+      employees application. 
+  - title: HTTP Codes
+    content: |
+      [200](https://httpstatuses.com/200)
+      [400](https://httpstatuses.com/400)
+      [500](https://httpstatuses.com/500)
+protocols: [ HTTP, HTTPS ]
+
+###########################################
+# All the type libraries are imported here
+uses:
+  ActionLib: lib/action.lib.raml
+  AuthLib: lib/auth.lib.raml
+  BroadcastLib: lib/broadcast.lib.raml
+  RoleLib: lib/role.lib.raml
+  ShiftRowLib: lib/shift-row.lib.raml
+  UserLib: lib/user.lib.raml
+  UtilsLib: lib/utils.lib.raml
+  WorkplaceLib: lib/workplace.lib.raml
+
+###########################################
+# All the resource types are imported here
+resourceTypes: 
+  collection: !include resource-types/collection.raml
+  collection-item: !include resource-types/collection-item.raml
+  auth: !include resource-types/auth.raml
+  action: !include resource-types/action.raml
+
+############################################
+# All the traits are imported here
+traits: 
+  
+##############################################
+# All the resources are defined below
+
+/users:
+  type: 
+    collection:
+      postReqBodyType: UserLib.UserType
+      getCollectionExample: !include examples/users/get_users.res.json
+      postReqExample: !include examples/users/post_user.req.json
+      postResExample: !include examples/users/post_user.res.json
+  /{userId}:
+    get: 
+    put:
+    delete:
+    type: 
+      collection-item:
+        getCollectionItemExample: !include examples/users/get_user.res.json
+        putReqExample: !include examples/users/put_user.req.json
+        putReqBodyType: UserLib.EditUserType
+    /password:
+      put:
+        description: Updates password for the user with id { userId } 
+      type:
+        collection-item:
+          putReqBodyType: UserLib.UpdatePasswordType
+          putReqExample: !include examples/users/put_password.req.json
+    /email:
+      put:
+        description: Updates email for the user with { userId }
+      type: 
+        collection-item: 
+          putReqBodyType: UserLib.UpdateEmailType
+          putReqExample: !include examples/users/put_email.req.json
+    /shifts:
+      get:
+        queryParameters:
+          workplace:
+            description: Id of the workplace to retrieve shifts from
+            type: integer
+            required: true
+            example: 1
+          upcoming:
+            description: |
+              Specify whether to retrieve only upcoming shifts, 
+              putting true to this value means only upcoming shifts are retrieved.
+            type: boolean
+            required: true
+            example: true
+          month:
+            description: Specify which month's shifts to retrieve 
+            type: integer
+            required: false
+            example: 09
+          year: 
+            description: Specify which year's shift to retrieve
+            type: integer
+            required: false
+            example: 2019
+        responses: 
+          200:
+            body:
+              application/json:
+                example: !include examples/shifts/get_shifts.res.json
+          400:
+            body: 
+              application/json:
+                example: !include examples/400.res.json
+    /workplaces:
+      get:
+        description: Returns a collection of workplaces associated with user {userId}
+        responses:
+          200:
+            body:
+              application/json:
+                example: !include examples/users/get_workplaces.res.json
+          400:
+            body:
+              application/json:
+                example: !include examples/400.res.json
+    /logout:
+      delete:
+        description: Destroys the session of a user, logs user out of application
+        responses: 
+          200:
+            body: 
+              application/json:
+                example: !include examples/users/delete_logout.json
+          400:
+            body: 
+              application/json:
+                example: !include examples/400.res.json
+/workplaces:
+  type: 
+    collection:
+      postReqBodyType: WorkplaceLib.WorkplaceType
+      getCollectionExample: !include examples/workplaces/get_workplaces.res.json
+      postReqExample: !include examples/workplaces/post_workplace.req.json
+      postResExample: !include examples/workplaces/post_workplace.res.json
+  /{workplaceId}:
+    get:
+    put:
+    delete:
+    type: 
+      collection-item:
+        getCollectionItemExample: !include examples/workplaces/get_workplace.res.json
+        putReqExample: !include examples/workplaces/put_workplace.req.json
+        putReqBodyType: WorkplaceLib.EditWorkplaceType
+    /password:
+      put:
+        description: Updates password for the Workplace with id { workplaceId } 
+      type:
+        collection-item:
+          putReqBodyType: UserLib.UpdatePasswordType
+          putReqExample: !include examples/users/put_password.req.json
+    /email:
+      put:
+        description: Updates email for the workplace with { workplaceId }
+      type: 
+        collection-item: 
+          putReqBodyType: UserLib.UpdateEmailType
+          putReqExample: !include examples/users/put_email.req.json
+    /logout:
+      delete:
+        description: Destroys the session of a workplace user, logs workplace user out of application
+        responses: 
+          200:
+            body: 
+              application/json:
+                example: !include examples/users/delete_logout.json
+          400:
+            body: 
+              application/json:
+                example: !include examples/400.res.json
+    /employees:
+      get:
+        queryParameters: 
+          role:
+            type: string
+            required: false
+      type: 
+        collection:
+          getCollectionExample: !include examples/employees/get_employees.res.json
+          postReqBodyType: UserLib.NewEmployeeType
+          postReqExample: !include examples/employees/post_employee.req.json
+          postResExample: !include examples/employees/post_employee.res.json
+      /{employeeId}:
+        get:
+        put:
+        delete:
+        type: 
+          collection-item:
+            getCollectionItemExample: !include examples/employees/get_employee.res.json
+            putReqExample: !include examples/employees/put_employee.req.json
+            putReqBodyType: UserLib.EditEmployeeType
+        /shift-rows:
+          get:
+            queryParameters: 
+              fromWeek:
+                type: UtilsLib.WeekNoType
+              toWeek:
+                type: UtilsLib.WeekNoType
+              year:
+                type: integer
+                example: 2019
+            responses:
+              200:
+                body:
+                  type: object
+                  application/json:
+                    example: !include examples/employees/get_employee-shift-rows.json
+              400:
+                body:
+                  type: object
+                  application/json:
+                    example: !include examples/400.res.json
+
+    /roles:
+      get:
+      type: 
+        collection:
+          getCollectionExample: !include examples/roles/get_roles.res.json
+          postReqBodyType: WorkplaceLib.RoleType
+          postReqExample: !include examples/roles/post_role.req.json
+          postResExample: !include examples/roles/post_role.res.json
+      /{roleId}:
+        delete:
+        type: collection-item
+    /shift-rows:
+      get:
+        queryParameters: 
+          weekNo:
+            description: Specify which week shift-rows belong to
+            type: integer
+            required: true
+            minimum: 1
+            maximum: 52
+            example: 52
+          year:
+            description: Specify which year shift-rows belong to
+            type: integer
+            required: true
+            example: 2019
+      post:
+      type:
+        collection:
+          getCollectionExample: !include examples/shiftrows/get_shift-rows.res.json
+          postReqBodyType: ShiftRowLib.ShiftRowBodyType
+          postReqExample: !include examples/shiftrows/post_shift-row.req.json
+          postResExample: !include examples/shiftrows/post_shift-row.res.json
+      put:
+        description: |
+          Edits the shift-row resource and shifts associated with the shift-row
+        body:
+          application/json:
+            type: ShiftRowLib.ShiftRowBodyType
+            example: !include examples/shiftrows/put_shift-row.req.json
+        responses: 
+          200:
+            body:
+              type: object
+              application/json:
+                example: |
+                  {
+                    "statusCode": 200,
+                    "message": "Updated",
+                    "description": "shift-row resource successfully updated and saved."
+                  }
+          400:
+            body:
+              type: object
+              application/json:
+                example: !include examples/400.res.json
+      /publish:
+        put:
+          description: Publishes shift-rows and shifts to be seen by the users
+          body:
+            application/json:
+              type: ShiftRowLib.ShiftRowPublishBodyType
+              example: !include examples/shiftrows/put_shift-row__publish.req.json
+          responses: 
+            200:
+              body:
+                type: object
+                application/json:
+                  example: |
+                    {
+                      "statusCode": 200,
+                      "message": "Published",
+                      "description": "Shifts published."
+                    }
+            400:
+              body:
+                type: object
+                application/json:
+                  example: !include examples/400.res.json
+    /downloads:
+      get:
+        description: Download the shcedules of the workplace for specified date range
+        queryParameters: 
+          from:
+            description: Date of first shift to include in download in "YYYY-MM-DD" format
+            type: string
+            required: true
+            example: 2019-11-01
+          until:
+            description: Date of last shift to include in download in "YYYY-MM-DD" format
+            type: string
+            required: true
+            example: 2019-11-29
+          fileName:
+            description: Optional custom filename for the download file
+            type: string
+            required: false
+            example: october-work-schedules
+        responses: 
+          200:
+            body:
+              application/vnd.openxmlformats-officedocument.spreadsheetml.sheet:
+          400:
+            body:
+              type: object
+              application/json:
+                example: !include examples/400.res.json
+
+/auth:
+  description: Interface to authenticate user and workplace into the application
+  /user:
+    type: 
+      auth:
+        resourceName: User
+        AuthType: AuthLib.AuthType 
+  /workplace:
+    type: 
+      auth:
+        resourceName: Workplace
+        AuthType: AuthLib.AuthType
+/account:
+  /forgot-password:
+    type: 
+      action:
+        putReqBodyType: ActionLib.ForgotPasswordType
+        putReqExample: !include examples/actions/forgot-password.req.json
+        putReqSuccessResponseExample: !include examples/actions/forgot-password.res.json
+  /reset-password:
+    type: 
+      action:
+        putReqBodyType: ActionLib.ResetPasswordType
+        putReqExample: !include examples/actions/reset-password.req.json
+        putReqSuccessResponseExample: !include examples/actions/reset-password.res.json
+  /verify-email:
+    type: 
+      action:
+        putReqBodyType: ActionLib.VerifyEmailType
+        putReqExample: !include examples/actions/put_verify-email.req.json
+        putReqSuccessResponseExample: !include examples/actions/put_verify-email.res.json
+    get:
+      description: Interface to verify user's/workplace's email address with given query parameters
+      queryParameters: 
+        digest: string
+        role: 
+          type: string
+          enum: ['workplace', 'user']
+      responses: 
+        200:
+          body: 
+            application/json:
+              type: object
+              example: !include examples/actions/get_verify-email.res.json
+        400:
+          body: 
+            application/json:
+              type: object
+              example: !include examples/400.res.json
+        
+  
+

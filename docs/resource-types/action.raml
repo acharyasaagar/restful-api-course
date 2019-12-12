@@ -1,0 +1,19 @@
+#%RAML 1.0 ResourceType
+put:
+  description: Interface for requesting to perform <<resourcePathName>> action for users and workplaces
+  body: 
+    application/json:
+      type: |
+        <<putReqBodyType>>
+      example: |
+        <<putReqExample>>
+  responses: 
+    200:
+      body: 
+        application/json:
+          example: |
+            <<putReqSuccessResponseExample>>
+    400:
+      body:
+        application/json:
+          example: !include ../examples/400.res.json

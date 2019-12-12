@@ -1,0 +1,6 @@
+{
+  "statusCode": 400,
+  "message": "Request failed",
+  "description": "The request did not match the API's specification.",
+  "errors": ["Error: Here will come the actual error message"]
+}

@@ -1,0 +1,6 @@
+{
+  "statusCode": 200,
+  "message": "Session Destroyed",
+  "description": "User successfully logged out of the application",
+  "data": {}
+}

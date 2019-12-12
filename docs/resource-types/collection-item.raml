@@ -1,0 +1,44 @@
+#%RAML 1.0 ResourceType
+
+get?:
+  description: |
+    Returns a single <<resourcePathName|!singularize>> resource
+    with <<resourcePathName|!singularize>>Id =
+    { <<resourcePathName|!singularize>>Id }
+  responses: 
+    200:
+      body:
+        application/json:
+          example: |
+            <<getCollectionItemExample>>
+    400:
+      body:
+        application/json:
+          example: !include ../examples/400.res.json
+put?:
+  description: |
+    Edits the <<resourcePathName|!singularize>> resource
+    with <<resourcePathName|!singularize>>Id =
+    { <<resourcePathName|!singularize>>Id }
+  body:
+    application/json:
+      type: |
+        <<putReqBodyType>>
+      example: |
+        <<putReqExample>>
+  responses: 
+    200:
+      body:
+        type: object
+        application/json:
+          example: !include ../examples/put.res.json
+delete?:
+  description: |
+    Removes <<resourcePathName|!singularize>> resource
+    with <<resourcePathName|!singularize>>Id =
+    { <<resourcePathName|!singularize>>Id }
+  responses:
+    200: 
+      body:
+        application/json:
+          example: !include ../examples/delete.res.json

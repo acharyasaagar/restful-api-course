@@ -1,0 +1,58 @@
+#%RAML 1.0 Library
+
+uses: 
+  RoleLib: ./role.lib.raml
+
+types: 
+  ShiftType:
+    type: object
+    properties: 
+      shiftId: string
+      startTime: string
+      finishTime: string
+      date: string
+      role: string
+      shiftType:
+        type: string
+        enum: 
+          - 's'
+          - 'x'
+          - 'vl'
+          - 'vv'
+          - 'sp'
+          - 'v'
+          - 'p'
+      shiftHours: number
+  ShiftRowType:
+    type: object
+    properties: 
+      shiftRowId: string
+      shifts: 
+        type: ShiftType[]
+        minItems: 7
+        maxItems: 7
+      totalHours: number
+      maxAllowedWorkingHours: number
+      user: number
+      employeeName: string[]
+      employeeRoles: RoleLib.RoleType[]
+
+  ShiftRowBodyType:
+    type: object
+    properties: 
+      shiftRowId: string
+      shifts: 
+        type: ShiftType[]
+        minItems: 7
+        maxItems: 7
+      totalHours: number
+      user: number
+      weekNo: number
+      year: number
+      
+  ShiftRowPublishBodyType:
+    type: object
+    properties: 
+      publishShiftsBeforeDate: string
+
+

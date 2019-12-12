@@ -1,0 +1,20 @@
+{
+  "userEmail": "jdoe@mail.com",
+  "employmentStartDate": "11 Aug 2019",
+  "employmentEndDate": "10 July 2020",
+  "maxAllowedWorkingHours": 40,
+  "roles": [
+    {
+      "id": 1,
+      "roleName": "Cashier"
+    },
+    {
+      "id": 2,
+      "roleName": "Waiter"
+    },
+    {
+      "id": 3,
+      "roleName": "Manager"
+    }
+  ]
+}

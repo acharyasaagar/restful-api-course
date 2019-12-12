@@ -1,0 +1,10 @@
+{
+  "statusCode": 200,
+  "message": "Registered",
+  "description": "Workplace successfully registered to the application",
+  "data": {
+    "id": 1,
+    "name": "Restaurant Helsinki",
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6IndvcmtwbGFjZTExQGdtYWlsLmNvbSIsImlkIjo0LCJpYXQiOjE1NTczMDc2MTIsImV4cCI6MTU1OTg5OTYxMn0.R78Fiz0yUqQgU19iSyUZwhYsfaYZTamuVbAV-LozHNc"
+  }
+}

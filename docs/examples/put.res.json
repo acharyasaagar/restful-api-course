@@ -1,0 +1,5 @@
+{
+  "statusCode": 200,
+  "message": "Updated",
+  "description": "<<resourcePathName|!singularize>> resource successfully updated and saved."
+}

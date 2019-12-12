@@ -1,0 +1,5 @@
+{
+  "statusCode": 200,
+  "message": "Removed",
+  "description": "<<resourcePathName|!singularize>> resource has been successfully removed."
+}
